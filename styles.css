@@ -2493,9 +2493,252 @@ footer span {
     .filtro-btn {
         flex: 1 1 100%;
         max-width: none;
+    }/* =========================================
+   📱 RESPONSIVIDADE PARA CELULAR
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* Evita que o site fique maior que a tela */
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
+
+    /* Faz o tamanho dos elementos ficar correto */
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    /* =========================
+       SEÇÕES
+       ========================= */
+
+    section {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* =========================
+       TÍTULOS
+       ========================= */
+
+    h1 {
+        width: 100%;
+        max-width: 100%;
+        font-size: 2rem;
+        line-height: 1.2;
+        text-align: center;
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+    h2 {
+        width: 100%;
+        max-width: 100%;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    h3 {
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    /* =========================
+       TEXTOS
+       ========================= */
+
+    p {
+        max-width: 100%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    /* =========================
+       CATÁLOGO DE PETS
+       ========================= */
+
+    .catalogo {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        width: 100%;
+        max-width: 100%;
+        gap: 20px;
+    }
+
+    /* =========================
+       CARDS
+       ========================= */
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* =========================
+       HISTÓRIAS FELIZES
+       ========================= */
+
+    .historias,
+    .depoimentos,
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        width: 100%;
+        max-width: 100%;
+        gap: 25px;
+    }
+
+    .historia-card,
+    .depoimento {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    /* =========================
+       TÍTULO "HISTÓRIAS FELIZES"
+       ========================= */
+
+    .secao-titulo,
+    .titulo-secao,
+    .section-title {
+        width: 100%;
+        max-width: 100%;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    /* =========================
+       BOTÕES
+       ========================= */
+
+    button,
+    .filtro-btn,
+    .btn-adotar {
+        max-width: 100%;
+        white-space: normal;
+    }
+
+    /* =========================
+       FILTROS
+       ========================= */
+
+    .filtros {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .filtro-btn {
+        padding: 10px 14px;
+        font-size: 0.9rem;
+    }
+
+    /* =========================
+       IMAGENS
+       ========================= */
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* =========================
+       CABEÇALHO
+       ========================= */
+
+    header {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    /* =========================
+       NAVEGAÇÃO
+       ========================= */
+
+    nav {
+        max-width: 100%;
+    }
+
+    /* =========================
+       RODAPÉ
+       ========================= */
+
+    footer {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
+}
+
+
+/* =========================================
+   📱 CELULARES PEQUENOS
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .catalogo {
+        gap: 15px;
+    }
+
+    .filtro-btn {
+        font-size: 0.85rem;
+        padding: 9px 12px;
+    }
+
+    .card,
+    .historia-card,
+    .depoimento {
+        width: 100%;
+    }
+}
 
     .btn-adotar {
         font-size: .95rem;
     }
 }
+
