@@ -1814,6 +1814,344 @@ footer span {
         grid-template-columns:
     }
 
+   /* =========================================
+   📱 AJUSTES PARA CELULAR
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* Evita que qualquer coisa ultrapasse a tela */
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    /* =========================
+       HEADER
+       ========================= */
+
+    header {
+        width: 100%;
+        padding: 15px 18px;
+    }
+
+    .navbar,
+    nav {
+        width: 100%;
+    }
+
+    /* Logo / título */
+    header h1 {
+        font-size: 1.7rem;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    /* =========================
+       MENU
+       ========================= */
+
+    .menu-toggle {
+        display: block;
+        font-size: 1.7rem;
+        padding: 8px 12px;
+    }
+
+    #menu {
+        width: 100%;
+    }
+
+    #menu a {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* =========================
+       HERO
+       ========================= */
+
+    .hero {
+        min-height: 75vh;
+        padding: 80px 20px 50px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+        line-height: 1.15;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .hero .btn,
+    .hero button {
+        width: 100%;
+        max-width: 280px;
+        margin: 10px auto;
+    }
+
+    /* =========================
+       SEÇÕES
+       ========================= */
+
+    section {
+        width: 100%;
+        padding: 55px 16px;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    section > p {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    /* =========================
+       CATÁLOGO
+       ========================= */
+
+    #catalogo {
+        padding: 50px 12px;
+    }
+
+    .catalogo {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    /* =========================
+       CARDS DOS PETS
+       ========================= */
+
+    .card,
+    .pet-card {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .card img,
+    .pet-card img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .card-content,
+    .pet-info {
+        padding: 18px;
+    }
+
+    .card h3,
+    .pet-card h3 {
+        font-size: 1.35rem;
+        margin-bottom: 8px;
+    }
+
+    .card p,
+    .pet-card p {
+        font-size: .95rem;
+        line-height: 1.5;
+    }
+
+    /* =========================
+       FILTROS
+       ========================= */
+
+    .filtros {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        margin: 20px auto 30px;
+    }
+
+    .filtro-btn {
+        flex: 1 1 calc(50% - 8px);
+        min-width: 130px;
+        max-width: 180px;
+        padding: 11px 12px;
+        font-size: .9rem;
+        border-radius: 999px;
+    }
+
+    /* =========================
+       BOTÃO ADOTAR
+       ========================= */
+
+    .btn-adotar {
+        width: 100%;
+        min-height: 48px;
+        margin-top: 12px;
+        padding: 12px 16px;
+        border-radius: 14px;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    /* =========================
+       COMO FUNCIONA
+       ========================= */
+
+    .como-funciona,
+    .impacto,
+    .beneficios {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    /* =========================
+       SOBRE
+       ========================= */
+
+    .sobre,
+    .sobre-container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    /* =========================
+       LOCALIZAÇÃO
+       ========================= */
+
+    .localizacao,
+    .localizacao-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* =========================
+       FORMULÁRIO
+       ========================= */
+
+    form {
+        width: 100%;
+    }
+
+    form input,
+    form select,
+    form textarea {
+        width: 100%;
+        max-width: 100%;
+        font-size: 16px;
+        padding: 13px;
+        border-radius: 12px;
+    }
+
+    form textarea {
+        min-height: 130px;
+        resize: vertical;
+    }
+
+    form button {
+        width: 100%;
+        min-height: 48px;
+    }
+
+    /* =========================
+       DEPOIMENTOS
+       ========================= */
+
+    .depoimentos,
+    .depoimentos-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    /* =========================
+       FAQ
+       ========================= */
+
+    .faq {
+        width: 100%;
+    }
+
+    .faq-item {
+        width: 100%;
+        padding: 16px;
+    }
+
+    /* =========================
+       RODAPÉ
+       ========================= */
+
+    footer {
+        padding: 30px 18px;
+        text-align: center;
+    }
+}
+
+
+/* =========================================
+   📱 CELULARES PEQUENOS
+   ========================================= */
+
+@media (max-width: 420px) {
+
+    .hero {
+        padding: 70px 16px 40px;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    section {
+        padding: 45px 12px;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    .catalogo {
+        gap: 16px;
+    }
+
+    .card img,
+    .pet-card img {
+        height: 210px;
+    }
+
+    .filtro-btn {
+        flex: 1 1 100%;
+        max-width: none;
+    }
+
+    .btn-adotar {
+        font-size: .95rem;
+    }
+}
     .antes-container{
         border: none !important;
         outline: none !important;
